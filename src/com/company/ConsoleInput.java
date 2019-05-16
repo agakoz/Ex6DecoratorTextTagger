@@ -15,6 +15,7 @@ public class ConsoleInput {
     public Integer getChoice() {
         System.out.print("Choose what you want to do: \n\t" +
                 "1. Add em tag\n\t2. Add mark tag\n\t3. Add p tag\n\t4. Add strong tag\n\t0. Exit\n> ");
-        return Integer.parseInt(read.nextLine());
+        choice = Integer.parseInt(read.nextLine());
+        return choice;
     }
 }

@@ -16,10 +16,9 @@ public class Menu {
 
     public void start() {
 
-        super.text.setContent(input.getText());
-
-
+       // text.setContent(input.getText());
         do {
+            //trzeba dodać moze listę gdzie bedą zapisyawne dokonane wybory już, żeby nie mozna byló zrobić dwa razy takiego samego tagu
         int choice = input.getChoice();
             switch (choice) {
                 case 1:
@@ -37,6 +36,7 @@ public class Menu {
                 case 0:
                     break;
             }
+
             if(choice != 0){
                 System.out.println("\tYour text: ");
                 text.write();
