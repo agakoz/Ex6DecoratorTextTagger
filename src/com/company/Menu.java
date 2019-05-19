@@ -11,7 +11,6 @@ public class Menu {
     ConsoleInput input;
 
 
-
     public Menu(ConsoleInput input, PlainText text) {
         this.input = input;
         this.text = text;
@@ -52,7 +51,6 @@ public class Menu {
                 text.write();
                 System.out.println("\n");
             }
-
 
 
         } while (choice != 0);

@@ -12,6 +12,5 @@ public class EmTag extends TextDecorator {
         System.out.print("</em>");
     }
 
-//eyrewolwerowany rewolwerowiec, całkiem spoko klawiatura, ciężko mi sie pisze bo inny układ ale git, wygodna :)
 
 }

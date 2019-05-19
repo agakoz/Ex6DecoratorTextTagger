@@ -1,12 +1,12 @@
 package com.company;
 
 public class StrongTag extends TextDecorator {
-    public StrongTag(Text text){
-        super (text);
+    public StrongTag(Text text) {
+        super(text);
     }
 
     @Override
-    public void write(){
+    public void write() {
         System.out.print("<strong>");
         super.write();
         System.out.print("</strong>");
