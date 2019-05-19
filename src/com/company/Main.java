@@ -22,7 +22,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Menu menu = new Menu(new ConsoleInput(), new PlainText("fsdf"));
+        Menu menu = new Menu(new ConsoleInput(), new PlainText("text"));
         menu.start();
 
 

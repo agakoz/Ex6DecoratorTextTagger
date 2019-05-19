@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
@@ -8,18 +10,22 @@ public class Menu {
     Text text;
     ConsoleInput input;
 
+
+
     public Menu(ConsoleInput input, PlainText text) {
-        this.input=input;
-        this.text=text;
+        this.input = input;
+        this.text = text;
 
     }
 
     public void start() {
 
-       // text.setContent(input.getText());
+        text.setContent(input.getText());
+
         do {
-            //trzeba dodać moze listę gdzie bedą zapisyawne dokonane wybory już, żeby nie mozna byló zrobić dwa razy takiego samego tagu
-        int choice = input.getChoice();
+
+            choice = input.getChoice();
+
             switch (choice) {
                 case 1:
                     text = new EmTag(text);
@@ -35,13 +41,19 @@ public class Menu {
                     break;
                 case 0:
                     break;
+                default:
+                    System.out.println("Error");
+
             }
 
-            if(choice != 0){
+            if (choice != 0) {
+
                 System.out.println("\tYour text: ");
                 text.write();
-
+                System.out.println("\n");
             }
+
+
 
         } while (choice != 0);
     }
